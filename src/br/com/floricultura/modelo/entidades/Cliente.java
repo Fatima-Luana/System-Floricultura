@@ -1,4 +1,4 @@
-package br.com.floricultura.modelo.entities;
+package br.com.floricultura.modelo.entidades;
 
 /**
  * Classe que corresponde ao objeto Cliente, na qual possui métodos e atributos

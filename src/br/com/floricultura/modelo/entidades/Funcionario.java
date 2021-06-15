@@ -1,4 +1,4 @@
-package br.com.floricultura.modelo.entities;
+package br.com.floricultura.modelo.entidades;
 
 /**
  * Classe que corresponde ao objeto Funcionario, na qual possui métodos e

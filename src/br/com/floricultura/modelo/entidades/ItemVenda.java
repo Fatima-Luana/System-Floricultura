@@ -1,4 +1,4 @@
-package br.com.floricultura.modelo.entities;
+package br.com.floricultura.modelo.entidades;
 
 import java.io.Serializable;
 
