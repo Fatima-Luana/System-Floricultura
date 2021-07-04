@@ -1,0 +1,4 @@
+user=root
+password=fatima123
+url=jdbc:mysql://localhost:3306/floricultura
+useSSL=false
