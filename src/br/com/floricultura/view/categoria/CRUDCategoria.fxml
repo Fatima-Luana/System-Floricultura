@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="594.0" prefWidth="912.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.floricultura.controller.categoria.CategoriaListaController">
+   <children>
+      <TableView fx:id="tableViewCategoria" layoutX="7.0" layoutY="143.0" prefHeight="451.0" prefWidth="896.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="143.0">
+        <columns>
+          <TableColumn fx:id="tcId" prefWidth="100.0" text="Id" />
+          <TableColumn fx:id="tcNomeCategoria" prefWidth="384.0" text="Categoria" />
+            <TableColumn fx:id="tableColumneditar" prefWidth="95.0" />
+            <TableColumn fx:id="tableColumneRemover" prefWidth="94.0" />
+        </columns>
+      </TableView>
+      <Button fx:id="btAdicionar" layoutX="35.0" layoutY="86.0" mnemonicParsing="false" onAction="#acaoBtAdicionar" prefHeight="43.0" prefWidth="137.0" style="-fx-background-color: #00796B;" text="  Adicionar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0">
+               <image>
+                  <Image url="@../../recursos/images/Group%201.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets top="2.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="texFildPesquisar" layoutX="507.0" layoutY="71.0" prefHeight="35.0" prefWidth="334.0" promptText="Digite o nome para pesquisar..." />
+      <Button fx:id="btBuscar" layoutX="831.0" layoutY="70.0" mnemonicParsing="false" onAction="#açãoBotaoPesquisar" prefHeight="35.0" prefWidth="52.0" style="-fx-background-color: #004D40;" textFill="#61b551">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0">
+               <image>
+                  <Image url="@../../recursos/images/Vector.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="774.0" layoutY="14.0" prefHeight="25.0" prefWidth="52.0" text="Inicial &gt;" textFill="#999a99">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="822.0" layoutY="14.0" prefHeight="25.0" prefWidth="69.0" text="Categoria" textFill="#004d40">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
